@@ -1,6 +1,6 @@
 ###GankDaily
 飞铺１２３
-
+![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
 ###干货数据源
 
 应用中的所有干货数据均来自[干货集中营](http://gank.io/)。
