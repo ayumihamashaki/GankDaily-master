@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_white_1000">#ffffff</color>
+
+    <color name="colorPrimary">@color/md_red_a700</color>
+    <color name="colorAccent">#df5115</color>
+    <color name="colorPrimaryDark">#5c311f</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="line_color">#ffeeeeee</color><!-- 分割线颜色 -->
+    <color name="radioButtonNormal">#FF000000</color><!-- RadioButton 点击后的颜色 -->
+    <color name="radioButtonSelcted">#FFFF5000</color>
+
+</resources>

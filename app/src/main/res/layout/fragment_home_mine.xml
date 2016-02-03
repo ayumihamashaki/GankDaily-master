@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/model_toolbar2"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:myapp="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/biz_tie_comment_tag_default"
+            myapp:civ_border_width="4dp"
+            myapp:civ_border_color="#FFFFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:text="@string/btn_login_now"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_signin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:text="@string/empty"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_username"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+    <include layout="@layout/mine_menu" />
+
+</LinearLayout>

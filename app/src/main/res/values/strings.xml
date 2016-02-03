@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">飞铺Beta</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">关于GankDaily</string>
+    <string name="action_about_gank">关于干货集中营</string>
+    <string name="action_github_tending">Github Tending</string>
+    <string name="action_save">保存</string>
+    <string name="title_activity_girl_detail">GirlDetailActivity</string>
+    <string name="title_activity_view_list">妹子们</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_copy_url">复制链接</string>
+    <string name="action_open_url">从浏览器打开链接</string>
+    <string name="toast_copy_done">复制成功</string>
+    <string name="toast_open_fail">打开链接失败</string>
+    <string name="empty_data_of_girls">妹子还没有准备好</string>
+    <string name="error_index_load">无法加载数据，请检查网络连接。点击可重试。</string>
+    <string name="no_more_girls">妹子见底了，没有更多啦。</string>
+    <string name="no_more_gank">没有更多干货啦(这个提示很难出现哦，看到这个不容易~)</string>
+    <string name="action_to_top">返回顶部</string>
+    <string name="picture_save_fail">图片保存失败，请再次尝试保存！</string>
+    <string name="picture_has_save_to">图片已保存至 %s 文件夹</string>
+
+    <string name="action_github_trending">GitHub trending</string>
+    <string name="action_github_issue">Opinion</string>
+    <string name="url_github_trending">https://github.com/trending</string>
+    <string name="url_github_issue">https://github.com/maoruibin/GankDaily/issues</string>
+
+    <string name="title_point">提示</string>
+    <string name="dialog_know">知道了</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="action_view_list">纯&#160;&#8226;&#160;妹子</string>
+    <string name="unknow">未知</string>
+    <string name="change_log">更新日志</string>
+
+
+    <string name="community_name">小区</string>
+    <string name="empty_data_of_stores">该小区没有店铺</string>
+    <string name="no_more_stores">没有更多的店铺</string>
+    <string name="mine_meimei">美美</string>
+
+    <string name="mine_menu_store">我的店铺</string>
+    <string name="mine_menu_address">我的地址</string>
+    <string name="mine_menu_collect">我的收藏</string>
+    <string name="mine_menu_setting">设置</string>
+
+    <!--页面标题-->
+    <string name="action_title_home">首页</string>
+    <string name="action_title_setting">设置</string>
+    <string name="action_title_feedback">意见反馈</string>
+    <string name="action_title_provision">服务条款</string>
+    <string name="action_title_aboutus">关于我们</string>
+    <string name="action_title_user_edit">个人编辑</string>
+    <string name="action_title_mine_store">我的店铺</string>
+    <string name="action_title_mine_address">我的地址</string>
+    <string name="action_title_mine_collect">我的收藏</string>
+    <string name="action_title_louxia">楼下</string>
+    <string name="action_title_message">消息</string>
+    <string name="action_title_order">订单</string>
+    <string name="action_title_mine">我的</string>
+    <string name="action_title_signin">登录</string>
+    <string name="action_title_signup">注册</string>
+    <string name="action_title_find_pwd">找回密码</string>
+    <string name="action_title_store_sign_in">店铺注册</string>
+    <string name="action_title_search_village">选择小区</string>
+    <string name="action_title_store">我的店铺</string>
+    <!--店铺注册-->
+    <string name="act_store_face">店铺图标</string>
+    <string name="act_store_name">店铺名称</string>
+    <string name="act_store_address">店铺地址</string>
+    <string name="act_store_phone">联系电话</string>
+    <string name="act_store_describe">店铺描述</string>
+    <string name="act_store_bussiness_num">营业编号</string>
+    <string name="act_store_community">所在小区</string>
+    <string name="act_store_demo">示例图片</string>
+    <string name="act_store_idcard">身份证正面</string>
+    <string name="act_store_hand_idcard">手持身份证</string>
+    <string name="act_store_bussiness_card">营业执照</string>
+    <!--设置菜单-->
+    <string name="menu_setting_feedback">意见反馈</string>
+    <string name="menu_setting_provision">服务条款</string>
+    <string name="menu_setting_about">关于我们</string>
+    <string name="setting_btn_log_out">退出登录</string>
+    <!--按钮-->
+    <string name="btn_signup">注册</string>
+    <string name="btn_signin">登录</string>
+    <string name="btn_find_pwd">找回密码</string>
+    <string name="btn_confirm">确认</string>
+    <string name="btn_post">提交</string>
+    <string name="btn_login_now">立即登录</string>
+    <string name="btn_add_address">新增送货地址</string>
+    <string name="empty"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gudong.gankio.ui.activity.FeedbackActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/model_toolbar2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_content"
+        android:hint="请输入您的意见"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_phone"
+        android:layout_gravity="center_horizontal"
+        android:hint="请输入您的电话"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_post"
+        android:id="@+id/bt_confirm"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

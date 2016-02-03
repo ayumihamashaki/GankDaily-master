@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gudong.gankio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+    <application
+        android:name=".GankApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        <!-- begin　Baidu Map -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="nComolDjtQZiAhEsw6y5tbCa" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
+        <!-- end　Baidu Map -->
+
+        <!-- begin　数据库 -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="louxia.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="2" />
+        <!-- (本本必须是整数,不能是小数)通过版本达到数据库在原有的基础上修改表,不影响用户的正常使用 -->
+        <!-- end　数据库 -->
+        <!-- begin umeng -->
+        <!-- end umeng -->
+
+        <activity
+            android:name=".ui.activity.GirlFaceActivity"
+            android:label="@string/title_activity_girl_detail" />
+        <activity
+            android:name=".ui.activity.WebActivity"
+            android:label="@string/title_activity_web" />
+        <activity android:name=".ui.activity.StoreDetailActivity" />
+        <activity android:name=".ui.activity.MineActivity" />
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity android:name=".ui.activity.FeedbackActivity" />
+        <activity android:name=".ui.activity.ProvisionActivity" />
+        <activity android:name=".ui.activity.AboutUsActivity" />
+        <activity android:name=".ui.activity.UserEditActivity" />
+        <activity android:name=".ui.activity.StoreMangerActivity" />
+        <activity android:name=".ui.activity.AddressMangerActivity" />
+        <activity android:name=".ui.activity.CollectMangerActivity" />
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".ui.activity.SignUpActivity" />
+        <activity android:name=".ui.activity.SignInActivity" />
+        <activity android:name=".ui.activity.UserFindPWDActivity" />
+        <activity android:name=".ui.activity.StoreActivity" />
+        <activity android:name=".ui.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.GuideActivity" />
+        <activity android:name=".ui.activity.AddressAddActivity" />
+        <activity android:name=".ui.activity.StoreSignInActivity" />
+        <activity android:name=".ui.activity.SearchVillageActivity"></activity>
+    </application>
+
+</manifest>

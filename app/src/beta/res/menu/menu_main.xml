@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+    <!--店铺详情的按钮-->
+    <item
+        android:id="@+id/action_louxia"
+        android:orderInCategory="90"
+        android:title="楼下"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_message"
+        android:orderInCategory="90"
+        android:title="消息"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_order"
+        android:orderInCategory="90"
+        android:title="订单"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_mine"
+        android:orderInCategory="90"
+        android:title="我的"
+        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never"/>
+
+</menu>

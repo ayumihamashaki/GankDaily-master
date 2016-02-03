@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gudong.gankio.ui.activity.HomeActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#FFFFFFFF"
+        />
+    <include layout="@layout/line"/>
+    <com.gudong.gankio.ui.widget.MyRadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="4"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_rb_a"
+                android:drawableTop="@drawable/tab_activity"
+                style="@style/main_tab_bottom"
+                android:text="楼下"
+                android:button="@color/transparent"
+                android:checked="true"
+                android:layout_centerInParent="true">
+            </RadioButton>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_rb_b"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/tab_uji"
+                android:text="消息"
+                android:layout_centerInParent="true"
+                android:checked="false">
+            </RadioButton>
+
+            <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ease_unread_count_bg"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_rb_c"
+                android:drawableTop="@drawable/tab_cart"
+                style="@style/main_tab_bottom"
+                android:text="订单"
+                android:layout_centerInParent="true" >
+            </RadioButton>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_rb_d"
+                android:drawableTop="@drawable/tab_user"
+                style="@style/main_tab_bottom"
+                android:text="我的"
+                android:layout_centerInParent="true" >
+            </RadioButton>
+        </RelativeLayout>
+    </com.gudong.gankio.ui.widget.MyRadioGroup>
+</LinearLayout>

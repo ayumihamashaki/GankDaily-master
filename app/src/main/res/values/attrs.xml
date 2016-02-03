@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <string-array name="countries">
+        <item>Command one</item>
+        <item>Command two</item>
+        <item>Command three</item>
+        <item>Command four</item>
+    </string-array>
+
+</resources>

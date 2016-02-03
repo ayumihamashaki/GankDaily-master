@@ -1,0 +1,160 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    //百度地图
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.gudong.gankio"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.0.1"
+    }
+
+    signingConfigs {
+        //指定名叫release的一个签名对象 会在下面的脚本(85行开始)中，动态根据配置文件设置属性
+        myConfig {
+            storeFile file("FP.jks")
+            storePassword "android"
+            keyAlias "FP"
+            keyPassword "android"//将这里的“**”替换成自己的信息
+        }
+    }
+
+    buildTypes {
+        release {
+            //手动打包的时候调用
+            //设置是否混淆
+            signingConfig signingConfigs.myConfig//不要忘了要在release的时候加入我么的签名配置信息
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            //系统自动打包的时候调用
+            signingConfig signingConfigs.myConfig//不要忘了要在release的时候加入我么的签名配置信息
+        }
+    }
+
+    productFlavors {
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxjava:x.y.z'
+    compile 'io.reactivex:rxandroid:1.0.+'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.ogaclejapan:rxbinding:1.2.+'
+    compile 'com.orhanobut:logger:1.4'
+    compile 'com.commit451:PhotoView:1.2.4'
+    /**
+     *         仿IOS加载框
+     *         https://github.com/Kaopiz/KProgressHUD
+     *         compile 'com.kaopiz:kprogresshud:1.0.1'
+     */
+    compile 'com.kaopiz:kprogresshud:1.0.1'
+    /**
+     *         仿IOS-UIActionSheet控件
+     *         https://github.com/baoyongzhang/android-ActionSheet
+     *         compile 'com.baoyz.actionsheet:library:1.1.5'
+     */
+    compile 'com.baoyz.actionsheet:library:1.1.5'
+    /**
+     *         仿iOS的PickerView控件
+     *         https://github.com/saiwu-bigkoo/Android-PickerView
+     *         compile 'com.bigkoo:pickerview:2.0.8'
+     */
+    compile 'com.bigkoo:pickerview:2.0.8'
+    /**
+     *         对话框
+     */
+    compile 'me.drakeet.materialdialog:library:1.2.8'
+    /**
+     *         分类下拉
+     *         https://github.com/dongjunkun/DropDownMenu
+     *         compile 'com.github.dongjunkun:DropDownMenu:1.0.3'
+     */
+    compile 'com.github.dongjunkun:DropDownMenu:1.0.3'
+    /**
+     *         下载功能
+     *         http://www.jcodecraeer.com/a/opensource/2016/0101/3819.html
+     *         compile 'com.liulishuo.filedownloader:library:0.1.2'
+     */
+    compile 'com.liulishuo.filedownloader:library:0.1.2'
+    /**
+     *         galleryfinal相册,需要配合picasso使用
+     *         https://github.com/pengjianbo/GalleryFinal
+     *         compile files('libs/activeandroid.jar')
+     compile files('libs/universal-image-loader-1.9.5.jar')
+     compile 'cn.finalteam:galleryfinal:1.4.8.3'
+     compile 'com.squareup.picasso:picasso:2.5.2'
+     */
+    compile files('libs/activeandroid.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'cn.finalteam:galleryfinal:1.4.8.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    /**
+     *         圆形图片
+     *         https://github.com/hdodenhof/CircleImageView
+     */
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile files('libs/android-async-http-1.4.9.jar')
+    /**
+     *    百度地图
+     */
+
+    /* compile files('libs/locSDK_6.13.jar')
+       compile files('libs/baidumapapi_search_v3_7_0.jar')
+        compile files('libs/baidumapapi_radar_v3_7_0.jar')
+        compile files('libs/baidumapapi_map_v3_7_0.jar')
+        compile files('baidumapapi_cloud_v3_7_0.jar')
+        compile files('libs/baidumapapi_base_v3_7_0.jar')*/
+    compile files('libs/BaiduLBS_Android.jar')
+
+    /**
+     * 指示器
+     * https://github.com/jpardogo/PagerSlidingTabStrip
+     * demo
+     * http://my.oschina.net/summerpxy/blog/210026
+     * compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+     */
+    compile 'com.jpardogo.materialtabstrip:library:1.1.0'
+
+    /**
+     * 分类置顶
+     * https://gist.github.com/gabrielemariotti/4c189fb1124df4556058
+     * demo
+     * https://github.com/emilsjolander/StickyListHeaders
+     * sticky-headers-recyclerview
+     * compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+     */
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+
+    /**
+     * 快速Adapter
+     * http://www.open-open.com/lib/view/open1453251687386.html
+     * http://mikepenz.github.io/FastAdapter/
+     */
+    compile('com.mikepenz:fastadapter:0.9.1@aar') {
+        transitive = true
+    }
+
+    compile 'com.truizlop.sectionedrecyclerview:library:1.0.0'
+
+}

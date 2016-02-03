@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gudong.gankio.ui.fragment.StoreProductFragment"
+    android:orientation="vertical">
+    <include layout="@layout/model_toolbar2"/>
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/md_grey_100">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_14"
+            android:paddingBottom="@dimen/dp_14">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="营业时间:"
+                android:layout_marginRight="@dimen/dp_14"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="*"
+                android:id="@+id/tv_store_opentime"/>
+
+        </LinearLayout>
+        <include layout="@layout/line"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_14"
+            android:paddingBottom="@dimen/dp_14">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家电话:"
+                android:layout_marginRight="@dimen/dp_14"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="*"
+                android:id="@+id/tv_store_phone"/>
+        </LinearLayout>
+        <include layout="@layout/line"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_14"
+            android:paddingBottom="@dimen/dp_14">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家地址:"
+                android:layout_marginRight="@dimen/dp_14"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="*"
+                android:id="@+id/tv_store_address"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_100">
+    </LinearLayout>
+
+</LinearLayout>

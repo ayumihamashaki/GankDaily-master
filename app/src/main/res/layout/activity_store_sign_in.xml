@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gudong.gankio.ui.activity.StoreSignInActivity"
+    android:orientation="vertical">
+    <include layout="@layout/model_toolbar2"/>
+    <!--店铺图标-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_face"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:myapp="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_store_face"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/biz_tie_comment_tag_default"
+                        myapp:civ_border_width="2dp"
+                        myapp:civ_border_color="#FFaaaaaa"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--店铺名称-->
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_name"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    >
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_store_name"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/dp_14"
+                        android:hint="填写店铺名称"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--店铺地址-->
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_address"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_store_address"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/dp_14"
+                        android:hint="填写店铺地址"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--联系电话-->
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_phone"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_store_phone"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/dp_14"
+                        android:hint="填写联系电话"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--店铺描述-->
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_describe"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_store_describe"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/dp_14"
+                        android:hint="填写店铺描述"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--营业编号-->
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_bussiness_num"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/et_store_bussiness_num"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/dp_14"
+                        android:hint="填写营业编号"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--所在小区-->
+            <include layout="@layout/line"/>
+            <LinearLayout
+                android:id="@+id/ly_village"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/act_store_community"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/md_grey_100">
+
+            </LinearLayout>
+            <!--身份证正面-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/authentication_pic_demo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_store_demo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/authentication_pic"
+                        android:maxWidth="100dp"
+                        android:maxHeight="100dp"
+                        android:id="@+id/iv_idcard"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_store_idcard"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--手持身份证-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/authentication_pic_demo3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_store_demo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/authentication_pic"
+                        android:maxWidth="100dp"
+                        android:maxHeight="100dp"
+                        android:id="@+id/ivStoreHandIdCard"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_store_hand_idcard"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--营业执照-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/authentication_pic_demo2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_store_demo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/ivStoreBussinessCard"
+                        android:src="@drawable/authentication_pic"
+                        android:maxWidth="100dp"
+                        android:maxHeight="100dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_store_bussiness_card"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_post"
+                android:id="@+id/btn_post" />
+            <!--提交-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
